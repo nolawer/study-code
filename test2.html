@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .box{
+        width: 300px;
+        height: 300px;
+        background-color : blue;
+        color : white;
+      }
+      .box:hover{
+        animation: 3.5s bing-bing infinite ease-in-out;
+      }
+      @keyframes bing-bing {
+        0%{
+          transform: none;
+        }
+        50% {
+          transform: rotate(3turn) scale(.5,.5);
+          background-color: red;
+        }
+        100% {
+          transform: none;
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      안녕하세용~
+    </div>
+  </body>
+</html>
